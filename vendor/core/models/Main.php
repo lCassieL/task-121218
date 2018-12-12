@@ -1,5 +1,5 @@
 <?php
-
+namespace models;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,6 +11,6 @@
  *
  * @author web
  */
-class Main {
+ class Main {
     //put your code here
 }
