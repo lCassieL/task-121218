@@ -11,3 +11,4 @@ spl_autoload_register(function($class){
 
 //$controller=new controllers\Main();
 //echo $controller;
+app\Router::init();

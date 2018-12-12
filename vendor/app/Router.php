@@ -1,7 +1,6 @@
 <?php
-
+namespace app;
 class Router {
-
     static function init() {
 	$controller_name = 'main';
 	$action_name = 'index';
