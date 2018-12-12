@@ -1,7 +1,7 @@
 <?php
 namespace models;
-
-class Articles extends Main {
+use core\models\Articles as CModArt;
+class Articles extends CModArt {
     public function getAll(){
         return ['news1','news2'];
     }

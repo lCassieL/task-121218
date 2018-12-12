@@ -1,6 +1,6 @@
 <?php
 class View {
-    public function render(){
-        
+    public function render($mas){
+        var_dump($mas);
     }
 }
