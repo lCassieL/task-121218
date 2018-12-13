@@ -1,5 +1,5 @@
 <?php
-
+// include 'vendor/app/Router.php';
 spl_autoload_register(function($class){
     $file='vendor'.DIRECTORY_SEPARATOR.$class.'.php';
     if(file_exists($file)){
@@ -9,6 +9,5 @@ spl_autoload_register(function($class){
     return false;
 });
 
-//$controller=new controllers\Main();
-//echo $controller;
+
 app\Router::init();
