@@ -1,6 +1,6 @@
 <?php
 namespace app;
-// use controllers\Main;
+// use controllers\Main as Main;
 class Router {
 
     static function init() {
@@ -14,14 +14,14 @@ class Router {
 	    $action_name = strtolower($routes[2]);
 	}
 	$controller_name = ucfirst($controller_name);
-	$model_class = $controller_name;
+	$model_class = 'Articles';
 	$controller_class = $controller_name;
 	$action = $action_name;
 	$model_path = "vendor/models/" . $model_class . '.php';
 	if (file_exists($model_path)) {
 	    include "$model_path";
 	}
-	$controller_path = "vendor/controllers/" . $controller_class . '.php';
+	$controller_path = "vendor/controllers/" . $controller_class . ".php";
 	if (file_exists($controller_path)) {
 	    include $controller_path;
 	} else {
