@@ -5,7 +5,11 @@ use core\controllers\Main as Core_Controllers_Main;
 class Main extends Core_Controllers_Main{
     public function index(){
         $this->model = new Articles();
-        $a = $this->model->getAll();
-        var_dump($a);
+        $news = $this->model->getAll();
+        foreach($news as $news_item){
+        	echo $news_item['name'].'<br>';
+        	echo $news_item['text'].'<br>';
+        	echo $news_item['author'].'<br>';
+        }
     }
 }
